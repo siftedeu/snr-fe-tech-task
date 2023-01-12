@@ -1,0 +1,7 @@
+.container {
+  @apply relative;
+}
+
+.container img {
+  transition: filter 0.2s;
+}

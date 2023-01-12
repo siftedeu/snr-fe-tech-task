@@ -1,0 +1,7 @@
+.container a {
+  @apply text-cerise;
+}
+
+.container > * + * {
+  margin-top: 1rem;
+}

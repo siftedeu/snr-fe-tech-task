@@ -1,0 +1,39 @@
+.heading {
+  @apply tracking-tight;
+  font-size: clamp(30px, 8vw, 50px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: relative;
+  right: 50%;
+  width: 110vw;
+  max-width: 110vw;
+  margin-left: -55vw;
+}
+
+@media (min-width: 736px) {
+  .heading {
+    @apply text-4xl;
+  }
+
+  .container {
+    justify-content: space-between;
+    max-width: 100%;
+    margin-left: -50%;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heading {
+    @apply text-6xl;
+  }
+
+  .container {
+    max-width: 120%;
+    margin-left: -60%;
+  }
+}

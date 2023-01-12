@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended",
+    "plugin:cypress/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:css-modules/recommended"
+  ],
+  "plugins": [
+    "cypress",
+    "jsx-a11y",
+    "jest",
+    "testing-library",
+    "jest-dom",
+    "css-modules"
+  ],
+  "env": {
+    "cypress/globals": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    // This is done because using next/link means <a> won't have a href and this rule complains about that
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-unused-vars": "error",
+    "no-console": "error",
+    "react/prop-types": "warn"
+  }
+}
